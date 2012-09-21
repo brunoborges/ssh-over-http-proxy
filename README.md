@@ -1,6 +1,8 @@
 ssh-over-http-proxy
 ===================
 
+Originally from: http://www.zeitoun.net/articles/ssh-through-http-proxy/start
+
 # Configure the client
 
 I suppose you are on a Linux system (debian for example). First you have to compile the connect binary which will help your ssh client to use proxies (HTTPS in our case). Then you have to configure your ssh client to tell him to use HTTPS proxy when he tries to connect to your ssh server.
