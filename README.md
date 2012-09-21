@@ -25,11 +25,13 @@ I suppose you are on a Linux system (debian for example). First you have to comp
 
 2. Configure your ssh client. Open or create your ~/.ssh/config file and add these lines :
 
-   ## Outside of the firewall, with HTTPS proxy
+   #### Outside of the firewall, with HTTPS proxy
    Host my-ssh-server-host.net
+
      ProxyCommand connect -H proxy.free.fr:3128 %h 443
-   ## Inside the firewall (do not use proxy)
+   #### Inside the firewall (do not use proxy)
    Host *
+
       ProxyCommand connect %h %p
 
 Then pray and test the connection :
